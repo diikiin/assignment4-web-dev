@@ -1,0 +1,64 @@
+[
+  {
+    "model": "blog.post",
+    "pk": 3,
+    "fields": {
+      "author": "Alikhan Bokeikhanuly",
+      "title": "Django Models",
+      "content": "Django web applications access and manage data through Python objects referred to as models. Models define the structure of stored data, including the field types and possibly also their maximum size, default values, selection list options, help text for documentation, label text for forms, etc.",
+      "published_at": "2024-11-01T12:00:00Z",
+      "likes": 123435,
+      "dislikes": 12,
+      "categories": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 4,
+    "fields": {
+      "author": "Akhmet Baitursynuly",
+      "title": "Python Functions",
+      "content": "A function is a block of code that performs a specific task.\n\nSuppose we need to create a program to make a circle and color it. We can create two functions to solve this problem:\n\nfunction to create a circle\nfunction to color the shape\nDividing a complex problem into smaller chunks makes our program easy to understand and reuse",
+      "published_at": "2024-11-05T16:00:00Z",
+      "likes": 4654,
+      "dislikes": 23,
+      "categories": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 5,
+    "fields": {
+      "author": "Khalel Dosmukhamedov",
+      "title": "Weather application with Django",
+      "content": "In this tutorial, I will build a weather web application using python, django web framework and Open Weather Map API. In order to do this, I will use python requests to call the Open Weather Map API.",
+      "published_at": "2024-06-01T13:34:00Z",
+      "likes": 2634556,
+      "dislikes": 345,
+      "categories": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 6,
+    "fields": {
+      "author": "Turar Rysqulov",
+      "title": "Calculator on Python",
+      "content": "Here we will be making a simple calculator in which we can perform basic arithmetic operations like addition, subtraction, multiplication, or division.",
+      "published_at": "2024-06-05T16:00:00Z",
+      "likes": 234,
+      "dislikes": 4,
+      "categories": [
+        1
+      ]
+    }
+  }
+]

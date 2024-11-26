@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: myproject
+      POSTGRES_USER: myproject
+      POSTGRES_PASSWORD: password
+    volumes:
+      - db_data:/var/libs/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - django_network
+
+  django:
+    build: .
+    volumes:
+      - .:/app
+      - static_files:/app/static
+      - uploaded_files:/app/upload
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      DB_NAME: myproject
+      DB_USER: myproject
+      DB_PASSWORD: password
+      DB_HOST: db
+      DB_PORT: 5432
+    networks:
+      - django_network
+
+volumes:
+  db_data:
+  static_files:
+  uploaded_files:
+
+networks:
+  django_network:
+    driver: bridge
