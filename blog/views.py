@@ -25,6 +25,9 @@ class PostViewSet(viewsets.ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
     throttle_classes = (AnonRateThrottle, UserRateThrottle, PremiumUserRateThrottle)
 
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
+
 
 class PostViewSetV2(viewsets.ModelViewSet):
     queryset = Post.objects.all()

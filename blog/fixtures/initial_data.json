@@ -17,7 +17,7 @@
     "model": "blog.post",
     "pk": 1,
     "fields": {
-      "author": "Alikhan Bokeikhanuly",
+      "user": 10,
       "title": "Getting Started with Django",
       "content": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.",
       "published_at": "2024-11-01T12:00:00Z",
@@ -33,7 +33,7 @@
     "model": "blog.post",
     "pk": 2,
     "fields": {
-      "author": "Akhmet Baitursynuly",
+      "user": 20,
       "title": "Introduction to Python",
       "content": "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.",
       "published_at": "2024-11-05T16:00:00Z",
@@ -48,7 +48,7 @@
     "model": "blog.comment",
     "pk": 1,
     "fields": {
-      "author": "Shoqan Ualikhanov",
+      "user": 30,
       "content": "Great article on Django!",
       "created_at": "2024-11-01T13:00:00Z",
       "post": 1
@@ -58,7 +58,7 @@
     "model": "blog.comment",
     "pk": 2,
     "fields": {
-      "author": "Mirzhaqup Dulatuly",
+      "user": 40,
       "content": "This post is very helpful!!",
       "created_at": "2024-11-07T14:00:00Z",
       "post": 2

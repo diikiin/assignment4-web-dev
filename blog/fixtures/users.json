@@ -1,0 +1,38 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 10,
+    "fields": {
+      "username": "alikhan_bokeikhanuly",
+      "email": "alikhan_bokeikhanuly@email.com",
+      "password": "pbkdf2_sha256$870000$VKGfD4Yp6LSLwJ1i6XuY5T$02zGHWeOpfyk4vu3aHjzw3ItdSW84WxAJ0Q2M13oLNU="
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 20,
+    "fields": {
+      "username": "akhmet_baitursynuly",
+      "email": "akhmet_baitursynuly@email.com",
+      "password": "pbkdf2_sha256$870000$Ijaix6iqvrKn9cwIVa5Ve4$+aBDd50gY+wSZ+DMsgqZK5WiewS+pI4NsH8sW+1GIz4="
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 30,
+    "fields": {
+      "username": "khalel_dosmukhamedov",
+      "email": "khalel_dosmukhamedov@email.com",
+      "password": "pbkdf2_sha256$870000$x8iRzmMxX1kp1awhK2blBV$UFHgZS2XdqZQiXtA2dt7zPEXsUSXyOCF7ACvlpghKZk="
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 40,
+    "fields": {
+      "username": "turar_rysqulov",
+      "email": "turar_rysqulov@email.com",
+      "password": "pbkdf2_sha256$870000$akUH2xYQuOksSzyoHRQBCQ$5uoFMUsaPwalHmssCQvKwpDlapEpDQZqb8ZhaNZ8Gjk="
+    }
+  }
+]
