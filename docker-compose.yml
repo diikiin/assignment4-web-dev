@@ -14,6 +14,11 @@ services:
     networks:
       - django_network
 
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+
   django:
     build: .
     volumes:
@@ -24,6 +29,7 @@ services:
       - "8000:8000"
     depends_on:
       - db
+      - redis
     environment:
       DB_NAME: myproject
       DB_USER: myproject
