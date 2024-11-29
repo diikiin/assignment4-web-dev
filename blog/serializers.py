@@ -6,6 +6,7 @@ from .models import Comment, Post, Category
 
 class CommentSerializer(serializers.ModelSerializer):
     user = UserSerializer(read_only=True)
+
     class Meta:
         model = Comment
         fields = '__all__'
@@ -35,5 +36,4 @@ class PostSerializerV2(serializers.ModelSerializer):
 
     class Meta:
         model = Post
-        fields = ['title', 'user', 'comments']
-        extra_kwargs = {'user': {'read_only': True}}
+        fields = ['title', 'user', 'comments', 'categories']

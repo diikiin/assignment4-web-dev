@@ -19,6 +19,7 @@ from django.urls import path, include
 from drf_yasg import openapi
 from drf_yasg.views import get_schema_view
 from rest_framework import permissions
+from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 from assignment4.views import UserRegistrationView
@@ -30,6 +31,7 @@ schema_view = get_schema_view(
         description="Blog API for managing posts and comments",
     ),
     public=True,
+    authentication_classes=[JWTAuthentication],
     permission_classes=[permissions.AllowAny]
 )
 
