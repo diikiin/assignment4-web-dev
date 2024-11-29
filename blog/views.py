@@ -42,9 +42,9 @@ class CommentViewSet(viewsets.ModelViewSet):
         comment = serializer.save()
         channel_layer = get_channel_layer()
         async_to_sync(channel_layer.group_send)(
-            f'post_{comment.post_id}',
+            f'post_{comment.post.id}',
             {
                 'type': 'send_notification',
-                'message': f'New comment {comment.author}: {comment.content}',
+                'message': f'New comment by {comment.author}: {comment.content}'
             }
         )
